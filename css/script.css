@@ -1,0 +1,25 @@
+#header {
+  color: #ff0000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  width: 500px;
+  height: 250px;
+  background: #ff1a00;
+  border: 1px solid #6e6d6d;
+}
+#header h1 {
+  color: #000000;
+}
+#header span {
+  color: #001a00;
+}
+#header span p {
+  color: #ff1a00;
+}
+#header p {
+  color: #000000;
+  margin-left: 20px;
+}

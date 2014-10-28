@@ -1,0 +1,40 @@
+@color-uno: #FF0000;
+@color-dos: #FF1A00;
+@color-tres: #FF0084;
+@color-cuatro: #B02B2C;
+@color-cinco: #000000;
+@box-padding: 10px;
+@box-margin: 20px;
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.mixBackground(@width, @height, @background){
+   width: @width;
+   height: @height;
+   background: @background;
+}
+
+#header {
+	h1{
+		color: @color-cinco;
+	}
+  span{
+  	color: @color-dos - @color-tres;
+  	p{
+     color: @color-dos;
+  	}
+  }
+  p{
+  	color: (@color-cuatro * @color-cinco);
+  	margin-left: @box-margin;
+  }
+  color: @color-uno;
+  .rounded-corners(10px);
+  .mixBackground(500px, 250px, @color-dos);
+  border: 1px solid desaturate(@color-cuatro, 60%);
+}
